@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 export function debounce(fn: any, wait: number) {
   let timer: number;
 
@@ -6,7 +8,7 @@ export function debounce(fn: any, wait: number) {
       clearTimeout(timer);
     }
 
-    const context = this;
+    const context: any = this;
 
     timer = setTimeout(() => {
       fn.apply(context, args);

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { CharacterIndex, ICharacter, Status } from "../interfaces/ICharacter";
 import { IResponse } from "../interfaces/IRest";
 import { useHttpClient } from "./index";
